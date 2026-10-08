@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Painel de Tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <div class="cartao-aplicacao">
+
+        <header class="cabecalho-aplicacao">
+
+            <h1>Minhas Tarefas</h1>
+
+            <button
+                id="botao-modo-escuro"
+                class="botao-principal"
+                title="Alternar modo escuro"
+            >
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </header>
+
+        <div class="caixa-entrada">
+
+            <input
+                type="text"
+                id="campo-tarefa"
+                placeholder="O que vamos fazer hoje?..."
+                maxlength="40"
+            >
+
+            <button
+                id="botao-adicionar"
+                class="botao-principal"
+                title="Adicionar tarefa"
+            >
+                <i class="fa-solid fa-plus"></i>
+                Adicionar
+            </button>
+
+            <button
+                id="botao-limpar"
+                class="botao-principal"
+                title="Limpar todas as tarefas"
+            >
+                <i class="fa-solid fa-broom"></i>
+            </button>
+
+        </div>
+
+        <ul id="lista-tarefas" class="lista-tarefas">
+        </ul>
+
+        <footer class="rodape-aplicacao">
+
+            <span id="contador-tarefas">
+                0 tarefas na lista
+            </span>
+
+        </footer>
+
+        <img
+            id="caioimg"
+            src="IMG-20260928-WA0006~2.jpg"
+            alt="Foto de Caio"
+        >
+
+        <p class="descricao">
+            Lista para Caio Ribeiro Coutinho Matos
+        </p>
+
+    </div>
+
+    <div
+        id="janela-imagem"
+        class="janela-imagem"
+    >
+
+        <div class="conteudo-imagem">
+
+            <button
+                id="fechar-imagem"
+                class="fechar-imagem"
+                title="Fechar imagem"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <img
+                id="imagem-ester"
+                src="ester.jpg"
+                alt="Imagem especial"
+            >
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
